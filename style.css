@@ -1,0 +1,158 @@
+ *{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+ }
+ 
+ body{
+    background-color: #262626;
+ }
+
+ .container
+ {
+    position: relative;
+    top: 50px;
+    width: 50%;
+    margin: auto;
+    /* background-color: #262626; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+ }
+
+
+.logo{
+    /* background-color: #262626; */
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+}
+
+.login{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.login input{
+    width: 100% !important;
+    height: 3rem;
+    margin-bottom: 15px;
+    justify-content: center;
+    background-color: #262626;
+    padding-left: 10px;
+    color: white;
+    border-bottom: pink 2px solid;
+     position: relative;
+    top: 20px;
+
+}
+.login input:focus{
+     outline: none;
+}
+
+.login p>a{
+    position: absolute;
+    right: 0;
+    color: white;
+    top: 20px;
+}
+
+.submit{
+     /* background-color: red !important; */
+    transition: all .5s;
+    position: relative;
+    top: 50px !important;
+    border-radius: 10px;
+    transition-duration: .5s;
+    border: 1px solid white !important;
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+    transition-duration: .5s;
+}
+
+span{
+    background-color: white;
+}
+
+.login p{
+    color: white;
+    position: relative;
+    top: 100px;
+    margin: auto;
+ }
+
+ .login p span{
+    color: blue;
+    background-color: transparent;
+    padding-left: 5px;
+  }
+ .login .forgetPass:hover{
+    /* text-decoration: none;
+    outline-style: none; */
+    background-color: red !important;
+  }
+
+  .login #email{
+    position: relative;
+  }
+  .login #msgEmail{
+     left: 0;
+    background-color: blue;
+    width: 100%;
+    height: 20%;
+    top: 15px;
+    padding: 5px;
+    display: none;
+   }
+  .login #password{
+    position: relative;
+  }
+  .login #msgPass{
+    left: 0;
+    background-color: blue;
+    width: 100%;
+    height: 20%;
+    top: -47px;
+    padding: 5px;
+    margin-bottom: 15px !important;
+    display: none;
+   }
+
+  .footer{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+
+   .links{
+    color: white !important;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+   .links p a{
+    color: aliceblue;
+   }
+
+   .links .one::after{
+    content: " | ";
+    padding-right: 5px;
+   }
+
+   @media screen and (max-width:505px) {
+    .login{
+        width: 100%;
+        margin: auto;
+     }
+       .login input{
+        max-width: 500px !important;
+       }
+   }
